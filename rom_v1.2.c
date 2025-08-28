@@ -1,5 +1,10 @@
+#define 0x30 0x30
+#define '\n' 0xa
+#define '\r' 0xd
+
 typedef unsigned char   undefined;
 
+typedef unsigned char    byte;
 typedef unsigned char    undefined1;
 typedef unsigned int    undefined4;
 typedef unsigned long    undefined8;
@@ -17,18 +22,18 @@ undefined DAT_04140010;
 undefined DAT_04140008;
 undefined DAT_04140014;
 undefined DAT_3c007500;
-undefined DAT_0440c1b8;
-undefined DAT_0440c1c0;
-undefined DAT_0440c1c8;
-undefined DAT_0440c1d0;
-undefined DAT_0440c1d8;
-undefined DAT_0440c1e0;
-undefined DAT_0440c1e8;
-undefined DAT_0440c1f8;
+TerminatedCString s_EMMC_0440c1b8;
+TerminatedCString s_UART_0440c1c0;
+TerminatedCString s_SD_0440c1c8;
+TerminatedCString s_USB_0440c1d0;
+TerminatedCString s_NOR_0440c1d8;
+TerminatedCString s_NAND_0440c1e0;
+TerminatedCString s_3_I:BS/%x._0440c1e8;
+TerminatedCString s_2BS/%s._0440c1f8;
 string s_3_I:Gadget_object_not_existed!_0440cb81;
 byte DAT_0e000000;
 undefined DAT_030501a0;
-undefined DAT_0440c208;
+TerminatedCString s_2WD._0440c208;
 undefined DAT_03000080;
 undefined DAT_050260e0;
 undefined DAT_050260c8;
@@ -43,56 +48,56 @@ byte DAT_0e000003;
 undefined DAT_050260d4;
 undefined DAT_0440c210;
 undefined DAT_03000004;
-undefined DAT_0440c228;
+TerminatedCString s_0_E:TRAP/0x%x._0440c228;
 string s_plat/phobos/platform.c_0440c240;
 undefined DAT_0e000014;
-undefined DAT_0440c258;
+TerminatedCString s_0_E:ra=0x%lx_0440c258;
 string s_panic_0440c268;
-undefined DAT_0440c270;
-undefined DAT_0440c290;
-undefined DAT_0440c2b0;
+TerminatedCString s_3_I:LIS/0x%x/%p/0x%x/%lu/%d._0440c270;
+TerminatedCString s_3_I:LIE/%d/%p/0x%x/%lu._0440c290;
+TerminatedCString s_3_I:C/%d/0x%x/0x%x._0440c2b0;
 undefined DAT_020b0004;
 undefined DAT_020b0020;
 undefined DAT_020b0024;
 undefined DAT_03003024;
-undefined DAT_0440c2c8;
+TerminatedCString s_2RLC._0440c2c8;
 undefined DAT_03050130;
 undefined DAT_0305012c;
 undefined DAT_0e000000;
 undefined DAT_03050134;
-undefined DAT_0440c2d0;
-undefined DAT_0440c2e8;
-undefined DAT_0440c300;
+TerminatedCString s_3_I:sw_info=0x%x_0440c2d0;
+TerminatedCString s_3_I:EP:0x%x/0x%x._0440c2e8;
+TerminatedCString s_3_I:ES:0x%x/0x%x._0440c300;
 undefined DAT_0209005c;
 undefined DAT_02060004;
 undefined DAT_02060008;
 undefined DAT_0206000c;
 undefined DAT_02060000;
 undefined DAT_02060010;
-undefined DAT_0440c318;
-undefined DAT_0440c338;
-undefined DAT_0440c350;
-undefined DAT_0440c370;
+TerminatedCString s_3_I:AES/0x%lx/0x%lx/0x%lx_0440c318;
+TerminatedCString s_3_I:INT_status_0x%x_0440c338;
+TerminatedCString s_0_E:Decryption_timeout_0440c350;
+TerminatedCString s_2VRK%d._0440c370;
 undefined DAT_0440e000;
 undefined DAT_0440e020;
 undefined DAT_0440e040;
-undefined DAT_0440c380;
-undefined DAT_0440c388;
+TerminatedCString s_2VBK._0440c380;
+TerminatedCString s_2VCC._0440c388;
 undefined DAT_020c01d8;
 undefined DAT_020c01dc;
 undefined DAT_020c01e0;
 undefined DAT_020c01e4;
-undefined DAT_0440c390;
+TerminatedCString s_2DK%d._0440c390;
 undefined DAT_0440e060;
 undefined DAT_0440e070;
 undefined DAT_0440e080;
-undefined DAT_0440c398;
-undefined DAT_0440c3a0;
+TerminatedCString s_2DB2._0440c398;
+TerminatedCString s_2VCP._0440c3a0;
 undefined DAT_03050114;
 undefined DAT_03050194;
-undefined DAT_0440c3a8;
-undefined DAT_0440c3b0;
-undefined DAT_0440c3c8;
+TerminatedCString s_2VB2._0440c3a8;
+TerminatedCString s_3_I:ep_swinfo._0440c3b0;
+TerminatedCString s_3_I:ep_dev._0440c3c8;
 undefined8 DAT_0440c400;
 undefined DAT_0e000008;
 undefined8 DAT_0440c408;
@@ -119,7 +124,7 @@ undefined DAT_03001040;
 undefined DAT_03001034;
 undefined DAT_0300102c;
 undefined DAT_03001038;
-undefined DAT_0440c428;
+TerminatedCString s_0_E:unknown_pinmux_0440c428;
 undefined DAT_03001900;
 undefined DAT_03001a00;
 undefined DAT_03001a04;
@@ -129,70 +134,70 @@ undefined DAT_03001a10;
 undefined DAT_03001a14;
 undefined DAT_0431002c;
 undefined1 DAT_0431002f;
-undefined DAT_0440c440;
+TerminatedCString s_3_I:%s_0440c440;
 string s_bm_sd_phy_init_0440c4e0;
 undefined DAT_05021050;
 undefined DAT_03050104;
 byte DAT_0e000002;
-undefined DAT_0440c450;
-undefined DAT_0440c458;
+TerminatedCString s_0:_0440c450;
+TerminatedCString s_0_E:Mount_SD_failed_(%d)_0440c458;
 string s_0:fip.bin_0440c478;
-undefined DAT_0440c488;
-undefined DAT_0440c4a8;
+TerminatedCString s_3_I:NO_fip.bin_in_SD_(%d)_0440c488;
+TerminatedCString s_2SNF._0440c4a8;
 string s_sd_open_fip_0440c4d0;
-undefined DAT_0440c4b0;
-undefined DAT_0440c4c8;
+TerminatedCString s_2SD/0x%x/0x%x/0x%x/%d._0440c4b0;
+TerminatedCString s_2URPL._0440c4c8;
 undefined DAT_03000294;
 undefined DAT_0e000004;
 undefined2 UNK_0e000001;
 undefined DAT_3c007fdc;
 undefined DAT_3c007fb0;
-undefined DAT_0440c4f0;
-undefined DAT_0440c518;
+TerminatedCString s_0_E:%s_Response_with_Error:_0x%0_0440c4f0;
+TerminatedCString s_0_E:%s_Card_stuck_in_programming_0440c518;
 string s_sd_device_state_0440c610;
 undefined DAT_3c007fd8;
 undefined DAT_3c007fc0;
 undefined1 DAT_3c007fc6;
 undefined DAT_3c007fd4;
-undefined DAT_0440c550;
-undefined DAT_0440c570;
-undefined DAT_0440c598;
-undefined DAT_0440c5b0;
-undefined DAT_0440c5e0;
-undefined DAT_0440c5f0;
+TerminatedCString s_0_E:SD_card_init_timeout!!_0440c550;
+TerminatedCString s_0_E:SD_card_identified_timeout:_%_0440c570;
+TerminatedCString s_3_I:SDSC_ocr=0x%x_0440c598;
+TerminatedCString s_3_I:cid_mid:0x%x_card_bga:0x%x_n_0440c5b0;
+TerminatedCString s_3_I:sd_rca:%d_0440c5e0;
+TerminatedCString s_3_I:csd_vers:0x%x_egs:0x%x_0440c5f0;
 undefined1 UNK_3c007fc7;
 undefined DAT_3c005210;
-undefined DAT_0440c620;
-undefined DAT_0440c650;
+TerminatedCString s_0_E:%s_CMD:_%u_INT_STAT:_0x%x_IN_0440c620;
+TerminatedCString s_0_E:%s_send_CMD_%u_timeout!_0440c650;
 string s_bm_sd_send_cmd_without_data_0440c778;
 undefined DAT_3c00522c;
-undefined DAT_0440c6b8;
-undefined DAT_0440c6d0;
-undefined DAT_0440c6f0;
+TerminatedCString s_0_E:Err:SD_PLL_0440c6b8;
+TerminatedCString s_3_I:SDCLK:(%d,%d,%d,%d)_0440c6d0;
+TerminatedCString s_0_E:Err:SD_INTERNAL_CLK_EN_0440c6f0;
 undefined DAT_3c005218;
 undefined DAT_3c005220;
 char DAT_3c005228;
 undefined DAT_030001f4;
-undefined DAT_0440c710;
-undefined DAT_0440c728;
+TerminatedCString s_3_I:SD_init_done_0440c710;
+TerminatedCString s_0_E:%s_Invalid_Bus_width:_%d_0440c728;
 string s_bm_sd_set_ios_0440c7b8;
 undefined4 UNK_3c005214;
 undefined DAT_3c005238;
 undefined1 DAT_3c005228;
 undefined DAT_3c005234;
 undefined DAT_3c005230;
-undefined DAT_0440c748;
-undefined DAT_0440c758;
+TerminatedCString s_2SDI/%d/%d._0440c748;
+TerminatedCString s_0_E:SD_initailizing_failed_0440c758;
 undefined *PTR_FUN_0440c7c8;
 char DAT_3c00804b;
 undefined DAT_3c0052e0;
 undefined DAT_3c0052e8;
 undefined DAT_3c0052f0;
-undefined DAT_0440c7f8;
+TerminatedCString s_3_I:Application:_reset_0440c7f8;
 undefined DAT_3c0053b8;
-undefined DAT_0440c838;
-undefined DAT_0440c850;
-undefined DAT_0440c860;
+TerminatedCString s_3_I:usb_unbind_0440c838;
+TerminatedCString s_3_I:usb_bind_0440c850;
+TerminatedCString s_2USBB._0440c860;
 undefined DAT_3c008020;
 undefined DAT_3c008018;
 undefined DAT_3c008011;
@@ -201,7 +206,7 @@ undefined1 DAT_3c007fe8;
 undefined DAT_3c007fe0;
 undefined LAB_04405168;
 undefined LAB_04405524;
-undefined DAT_0440c8e8;
+TerminatedCString s_3_I:recipient_target_cannot_be_i_0440c8e8;
 string s_ep1in-bulk_0440c990;
 string s_ep2out-bulk_0440c9a0;
 string s_ep3in-int_0440c9b0;
@@ -212,16 +217,16 @@ undefined DAT_3c005488;
 undefined DAT_3c005250;
 undefined DAT_3c005490;
 undefined DAT_3c005468;
-undefined DAT_0440c9f8;
+TerminatedCString s_3_I:bulkBufAlloc:_%p_0440c9f8;
 undefined DAT_0440ca10;
-undefined DAT_0440ca28;
-undefined DAT_0440ca40;
-undefined DAT_0440ca58;
-undefined DAT_0440ca70;
-undefined DAT_0440ca88;
-undefined DAT_0440caa0;
-undefined DAT_0440cab8;
-undefined DAT_0440cad0;
+TerminatedCString s_3_I:cb0_buf:_%p_0440ca28;
+TerminatedCString s_3_I:cb1_buf:_%p_0440ca40;
+TerminatedCString s_3_I:cb2_buf:_%p_0440ca58;
+TerminatedCString s_3_I:ep0BuffAlloc:_%p_0440ca70;
+TerminatedCString s_3_I:rsp_buf:_%p_0440ca88;
+TerminatedCString s_3_I:acm_buf:_%p_0440caa0;
+TerminatedCString s_3_I:setup_buf:_%p_0440cab8;
+TerminatedCString s_3_I:handler:_%p_0440cad0;
 undefined DAT_3c007ff0;
 undefined DAT_3c008008;
 undefined DAT_3c0052ca;
@@ -249,18 +254,18 @@ undefined DAT_3c005400;
 undefined DAT_3c0080a0;
 undefined LAB_04405260;
 undefined LAB_0440554e;
-undefined DAT_0440cb00;
-undefined DAT_0440cb18;
-undefined DAT_0440cb30;
-undefined DAT_0440cb38;
-undefined DAT_0440cb60;
+TerminatedCString s_3_I:USB_vbus_is_off_0440cb00;
+TerminatedCString s_3_I:timeout_in_ms_%d_0440cb18;
+TerminatedCString s_2USBC._0440cb30;
+TerminatedCString s_3_I:USB_polling_timeout_in_ms:_%_0440cb38;
+TerminatedCString s_3_I:Gadget_Register_Fail_0440cb60;
 undefined DAT_0440cb80;
-undefined DAT_0440cba8;
-undefined DAT_0440cbb8;
-undefined DAT_0440cbd8;
-undefined DAT_0440cbe8;
-undefined DAT_0440cbf0;
-undefined DAT_0440cbf8;
+TerminatedCString s_2USBEF._0440cba8;
+TerminatedCString s_3_I:connection_speed:_%d_0440cbb8;
+TerminatedCString s_2USBW/%d._0440cbd8;
+TerminatedCString s_2USBD._0440cbe8;
+TerminatedCString s_2USBL._0440cbf0;
+TerminatedCString s_0_E:USB_Error_%u_0440cbf8;
 string s_ep0-control_0440ced0;
 undefined DAT_3c0080c0;
 undefined DAT_3c0080b8;
@@ -290,11 +295,11 @@ undefined DAT_3c0054e8;
 undefined DAT_3c0054ec;
 string s_run_test_mode_%d_0440cf58;
 undefined DAT_3c0054f0;
-undefined DAT_0440cf70;
+TerminatedCString s_3_I:USBVID/%x._0440cf70;
 undefined DAT_03000048;
 undefined DAT_030000b4;
-undefined DAT_0440cf88;
-undefined DAT_0440cf98;
+TerminatedCString s_3_I:%s_done_0440cf88;
+TerminatedCString s_2USBI._0440cf98;
 string s_cv_usb_hw_init_0440cfa0;
 undefined DAT_1000000c;
 undefined DAT_03050128;
@@ -308,10 +313,10 @@ undefined DAT_10000008;
 undefined DAT_10000004;
 undefined DAT_10000030;
 undefined DAT_3c0080c8;
-undefined DAT_0440cfb0;
+TerminatedCString s_0_E:SPINAND_command_error,_no_in_0440cfb0;
 string s_spi_nand_get_feature_0440d1c8;
 undefined1 DAT_3c0080f6;
-undefined DAT_0440cfe8;
+TerminatedCString s_0_E:SPINAND_is_still_busy_over_1_0440cfe8;
 string s_spi_nand_polling_oip_0440d190;
 string s_spi_nand_read_page_by_row_addr_0440d1a8;
 string s_spi_nand_set_feature_0440d178;
@@ -333,14 +338,14 @@ undefined DAT_3c0080f0;
 undefined DAT_3c0080d8;
 byte DAT_3c0080ec;
 undefined DAT_3c0080dc;
-undefined DAT_0440d030;
+TerminatedCString s_3_I:MID_=_0x%x,_DID_=_0x%x_0440d030;
 string s_cv_spi_nand_read_id_0440d160;
 byte DAT_3c0080f7;
 byte DAT_3c0080f8;
 undefined DAT_3c0080e4;
 byte DAT_3c0080f9;
-undefined DAT_0440d050;
-undefined DAT_0440d078;
+TerminatedCString s_3_I:block_%d,_page_%d,_ecc_sts_:_0440d050;
+TerminatedCString s_3_I:ECC_UNCORR_0440d078;
 undefined DAT_3c0080e0;
 undefined DAT_3c0080e8;
 undefined DAT_3c0080ec;
@@ -351,17 +356,17 @@ undefined DAT_3c008100;
 undefined1 DAT_3c008108;
 undefined DAT_3c0080d0;
 undefined1 DAT_3c0080ed;
-undefined DAT_0440d090;
-undefined DAT_0440d0c0;
+TerminatedCString s_3_I:NAND_DEBUG:_NAND_version=0x%_0440d090;
+TerminatedCString s_3_I:NAND_DEBUG:_page_size=%d,_bl_0440d0c0;
 undefined DAT_3c008102;
 undefined DAT_03002030;
 undefined DAT_3c008104;
-undefined DAT_0440d138;
+TerminatedCString s_3_I:NAND_RS_0440d138;
 string s_spi_nand_device_reset_0440d148;
 undefined DAT_3c0082d0;
 undefined DAT_3c00817c;
 byte DAT_3c008348;
-undefined DAT_0440d1e0;
+TerminatedCString s_0_E:Find_inconsistent_fip_store_i_0440d1e0;
 undefined1 DAT_3c0082cb;
 undefined DAT_3c008354;
 undefined DAT_3c003000;
@@ -370,16 +375,16 @@ undefined DAT_3c003008;
 undefined DAT_3c0082b8;
 undefined DAT_3c0082bc;
 undefined DAT_3c0082c0;
-undefined DAT_0440d218;
-undefined DAT_0440d248;
-undefined DAT_0440d250;
+TerminatedCString s_0_E:ECC_UNCORR_occurrd_on_page_0_0440d218;
+TerminatedCString s_FIPB_0440d248;
+TerminatedCString s_FIPH_0440d250;
 undefined DAT_3c008348;
 char DAT_3c0082d0;
 byte DAT_3c00303c;
 undefined1 DAT_3c008350;
-undefined DAT_0440d258;
-undefined DAT_0440d268;
-undefined DAT_0440d2a8;
+TerminatedCString s_3_I:NSF._0440d258;
+TerminatedCString s_0_E:Scan_nand_fip_header_found_E_0440d268;
+TerminatedCString s_3_I:NSFE._0440d2a8;
 char DAT_3c0082cb;
 byte DAT_3c0082cd;
 char DAT_3c0082f8;
@@ -390,14 +395,14 @@ undefined1 DAT_3c0082c4;
 undefined DAT_3c008350;
 char DAT_3c0082cc;
 byte DAT_3c0082c4;
-undefined DAT_0440d2b8;
-undefined DAT_0440d2e8;
-undefined DAT_0440d310;
-undefined DAT_0440d348;
-undefined DAT_0440d370;
-undefined DAT_0440d3a8;
-undefined DAT_0440d3b8;
-undefined DAT_0440d3e0;
+TerminatedCString s_1_W:Scan_id=0x%x,_use_default_sp_0440d2b8;
+TerminatedCString s_0_E:spi_nand_scan_fip_header_fai_0440d2e8;
+TerminatedCString s_3_I:!!!!!!!!_Wrong_current_fip_i_0440d310;
+TerminatedCString s_1_W:No_nand_info_stored_in_fip_p_0440d348;
+TerminatedCString s_1_W:scanned_id_does_not_match_id_0440d370;
+TerminatedCString s_0_E:FIP%dNC_0440d3a8;
+TerminatedCString s_0_E:Read_a_bad_block_at_blk_%d_0440d3b8;
+TerminatedCString s_0_E:ECC_UNCORR_P%dB%d_RBP_0440d3e0;
 undefined DAT_3c0020c8;
 undefined DAT_3c0020c4;
 undefined DAT_3c0020d8;
@@ -416,40 +421,40 @@ undefined DAT_3c0020bc;
 undefined DAT_3c0020cc;
 undefined LAB_04400000;
 string s_oe010z:g4bd7a534_0440c140;
-undefined DAT_0440d400;
-undefined DAT_0440d418;
-undefined DAT_0440d428;
-undefined DAT_0440d430;
-undefined DAT_0440d448;
-undefined DAT_0440d468;
-undefined DAT_0440d488;
-undefined DAT_0440d4a0;
-undefined DAT_0440d4b8;
-undefined DAT_0440d4d8;
-undefined DAT_0440d4f8;
-undefined DAT_0440d500;
-undefined DAT_0440d520;
-undefined DAT_0440d530;
-undefined DAT_0440d550;
-undefined DAT_0440d568;
-undefined DAT_0440d570;
-undefined DAT_0440d590;
-undefined DAT_0440d5a8;
-undefined DAT_0440d5b0;
-undefined DAT_0440d5b8;
-undefined DAT_0440d5c0;
-undefined DAT_0440d5d0;
-undefined DAT_0440d5d8;
-undefined DAT_0440d5e0;
-undefined DAT_0440d5e8;
-undefined DAT_0440d600;
-undefined DAT_0440d620;
-undefined DAT_0440d638;
-undefined DAT_0440d650;
-undefined DAT_0440d658;
-undefined DAT_0440d680;
-undefined DAT_0440d698;
-undefined DAT_0440d6b0;
+TerminatedCString s_3_I:V/%x/%s/%d/%x._0440d400;
+TerminatedCString s_2SCS/%d/%d._0440d418;
+TerminatedCString s_2PS._0440d428;
+TerminatedCString s_0_E:load_param1_(%d)_0440d430;
+TerminatedCString s_0_E:PARAM1_magic_(0x%lx)_0440d448;
+TerminatedCString s_0_E:param1_cksum_(0x%x/0x%x)_0440d468;
+TerminatedCString s_0_E:verify_root_(%d)_0440d488;
+TerminatedCString s_0_E:verify_bl_pk_(%d)_0440d4a0;
+TerminatedCString s_0_E:decrypt_bl_ek_(%d)_0440d4b8;
+TerminatedCString s_0_E:verify_chip_conf_(%d)_0440d4d8;
+TerminatedCString s_2PE._0440d4f8;
+TerminatedCString s_3_I:CS/0x%x/0x%x/0x%x._0440d500;
+TerminatedCString s_3_I:No_BLCP._0440d520;
+TerminatedCString s_0_E:range_of_BLCP_(0x%x/0x%x)_0440d530;
+TerminatedCString s_3_I:BLCP_in_RTC._0440d550;
+TerminatedCString s_2CS._0440d568;
+TerminatedCString s_0_E:blcp_cksum_(0x%x/0x%x)_0440d570;
+TerminatedCString s_0_E:verify_blcp_(%d)_0440d590;
+TerminatedCString s_2AS._0440d5a8;
+TerminatedCString s_2AN._0440d5b0;
+TerminatedCString s_2AM._0440d5b8;
+TerminatedCString s_2AC/0x%x/0x%x._0440d5c0;
+TerminatedCString s_2AE._0440d5d0;
+TerminatedCString s_2CE._0440d5d8;
+TerminatedCString s_2BS._0440d5e0;
+TerminatedCString s_0_E:load_BL2_(%d)_0440d5e8;
+TerminatedCString s_0_E:bl2_cksum_(0x%x/0x%x)_0440d600;
+TerminatedCString s_0_E:decrypt_BL2_(%d)_0440d620;
+TerminatedCString s_0_E:verify_BL2_(%d)_0440d638;
+TerminatedCString s_2BE._0440d650;
+TerminatedCString s_1_W:DL_cancelled._Load_flash._(%_0440d658;
+TerminatedCString s_0_E:Boot_failed_(%d)._0440d680;
+TerminatedCString s_3_I:bl2_entry=%p_0440d698;
+TerminatedCString s_2J._0440d6b0;
 undefined DAT_030020b8;
 string s_cv_usb_clk_init_0440d6f8;
 undefined DAT_0b030010;
@@ -459,7 +464,7 @@ undefined DAT_3c008378;
 undefined DAT_0440d918;
 string s_FAT32_0440d920;
 undefined DAT_3c008388;
-undefined1 DAT_0440d928;
+undefined DAT_0440d928;
 undefined LAB_0440b594;
 undefined FUN_0440b6c0;
 undefined LAB_0440b6a2;
@@ -712,8 +717,8 @@ void api_uart0_putc(undefined4 param_1)
 void api_console_putc(long param_1)
 
 {
-  if (param_1 == 10) {
-    api_uart0_putc(0xd);
+  if (param_1 == L'\n') {
+    api_uart0_putc(L'\r');
   }
   api_uart0_putc(param_1);
   return;
@@ -747,7 +752,7 @@ long api_uart0_getc(void)
 
 // WARNING: Globals starting with '_' overlap smaller symbols at the same address
 
-uint FUN_get_DAT_04140014_044003c8(void)
+uint FUN_get_uart_DAT_04140014_044003c8(void)
 
 {
   return _DAT_04140014 & 1;
@@ -833,46 +838,46 @@ void p_rom_api_set_boot_src(undefined8 param_1)
   char *pcVar1;
   
   _DAT_3c007500 = (uint)param_1;
-  api_tf_printf(&DAT_0440c1e8,param_1);
+  api_tf_printf(s_3_I_BS__x__0440c1e8,param_1);
   if (_DAT_3c007500 == 0xcea0) {
                     // SD
     _DAT_03000084 = 0xb3000004;
-    pcVar1 = &DAT_0440c1c8;
+    pcVar1 = s_SD_0440c1c8;
   }
   else if (_DAT_3c007500 < 0xcea1) {
     if (_DAT_3c007500 == 0xce02) {
       _DAT_03000084 = 0xb3000002;
                     // NOR
-      pcVar1 = &DAT_0440c1d8;
+      pcVar1 = s_NOR_0440c1d8;
     }
     else if (_DAT_3c007500 == 0xce03) {
       _DAT_03000084 = 0xb3000003;
                     // EMMC
-      pcVar1 = &DAT_0440c1b8;
+      pcVar1 = s_EMMC_0440c1b8;
     }
     else {
       pcVar1 = s_3_I_Gadget_object_not_existed__0440cb81 + 0x1f;
       if (_DAT_3c007500 == 0xce00) {
         _DAT_03000084 = 0xb3000001;
                     // NAND
-        pcVar1 = &DAT_0440c1e0;
+        pcVar1 = s_NAND_0440c1e0;
       }
     }
   }
   else if (_DAT_3c007500 == 0xcea3) {
     _DAT_03000084 = 0xb3000005;
                     // USB
-    pcVar1 = &DAT_0440c1d0;
+    pcVar1 = s_USB_0440c1d0;
   }
   else {
     pcVar1 = s_3_I_Gadget_object_not_existed__0440cb81 + 0x1f;
     if (_DAT_3c007500 == 0xcea5) {
       _DAT_03000084 = 0xb3000006;
                     // UART
-      pcVar1 = &DAT_0440c1c0;
+      pcVar1 = s_UART_0440c1c0;
     }
   }
-  api_tf_printf(&DAT_0440c1f8,pcVar1);
+  api_tf_printf(s_2BS__s__0440c1f8,pcVar1);
   return;
 }
 
@@ -903,7 +908,7 @@ undefined8 FUN_set_DAT_03000084_044006e8(void)
   if (((DAT_0e000000 & 1) == 0) &&
      (custom0.rs1.rs2((long)_DAT_030501a0,&stack0x00000000), (long)_DAT_030501a0 == 0)) {
     _DAT_03000084 = 0xc0001002;
-    api_tf_printf(&DAT_0440c208);
+    api_tf_printf(s_2WD__0440c208);
     return 1;
   }
   return 0;
@@ -974,7 +979,7 @@ void entry_reset(void)
   
   uVar1 = _DAT_03000004 & 3 | 0xce00;
   if ((uVar1 != 0xce00) && (1 < uVar1 - 0xce02)) {
-    api_tf_printf(&DAT_0440c228,0xce01);
+    api_tf_printf(s_0_E_TRAP_0x_x__0440c228,0xce01);
     api_reset(s_plat_phobos_platform_c_0440c240,0x2e);
   }
   p_rom_api_set_boot_src();
@@ -998,10 +1003,10 @@ undefined8 entry_load_image(undefined8 param_1,undefined8 param_2)
   
   _DAT_0e000010 = 0xbe00e002;
   _DAT_0e000014 = unaff_retaddr;
-  api_tf_printf(&DAT_0440c258);
+  api_tf_printf(s_0_E_ra_0x_lx_0440c258);
   uVar3 = api_reset(s_panic_0440c268,0xffffffffffffffff);
   uVar5 = (ulong)_DAT_3c007500;
-  api_tf_printf(&DAT_0440c270,uVar5,uVar3,extraout_a1,param_1,param_2);
+  api_tf_printf(s_3_I_LIS_0x_x__p_0x_x__lu__d__0440c270,uVar5,uVar3,extraout_a1,param_1,param_2);
   iVar1 = (int)param_1;
   if (uVar5 == 0xcea0) {
     uVar2 = api_load_sd(uVar3,extraout_a1,(long)iVar1);
@@ -1036,7 +1041,7 @@ undefined8 entry_load_image(undefined8 param_1,undefined8 param_2)
   }
   uVar2 = 0xffffffffffffffb2;
 LAB_04400922:
-  api_tf_printf(&DAT_0440c290,uVar2,uVar3,extraout_a1,param_1);
+  api_tf_printf(s_3_I_LIE__d__p_0x_x__lu__0440c290,uVar2,uVar3,extraout_a1,param_1);
   return uVar2;
 }
 
@@ -1055,7 +1060,7 @@ p_rom_api_load_image(undefined8 buf,undefined8 offset,undefined8 image_size,unde
   
                     // Get boot src
   boot_src = (ulong)_DAT_3c007500;
-  api_tf_printf(&DAT_0440c270,boot_src,buf,offset,image_size,retry_num);
+  api_tf_printf(s_3_I_LIS_0x_x__p_0x_x__lu__d__0440c270,boot_src,buf,offset,image_size,retry_num);
   iVar1 = (int)image_size;
   if (boot_src == 0xcea0) {
                     // BOOT_SRC_SD
@@ -1095,7 +1100,7 @@ p_rom_api_load_image(undefined8 buf,undefined8 offset,undefined8 image_size,unde
   }
   uVar2 = 0xffffffffffffffb2;
 LAB_04400922:
-  api_tf_printf(&DAT_0440c290,uVar2,buf,offset,image_size);
+  api_tf_printf(s_3_I_LIE__d__p_0x_x__lu__0440c290,uVar2,buf,offset,image_size);
   return uVar2;
 }
 
@@ -1154,7 +1159,7 @@ LAB_04400a9e:
         if (uVar1 + 0xfe000000 < 0x1000000) {
           return;
         }
-        api_tf_printf(&DAT_0440c2b0,(long)*(int *)(lVar2 + 4));
+        api_tf_printf(s_3_I_C__d_0x_x_0x_x__0440c2b0,(long)*(int *)(lVar2 + 4));
         uVar4 = custom0.rd();
         *(undefined4 *)
          ((ulong)*(byte *)(lVar2 + 3) << 0x18 |
@@ -1177,7 +1182,7 @@ LAB_04400a9e:
 void FUN_set_DAT_020b0004_04400b56(undefined8 param_1)
 
 {
-  api_tf_printf(&DAT_0440c2c8);
+  api_tf_printf(s_2RLC__0440c2c8);
   _DAT_020b0004 = _DAT_020b0004 | 0x2000;
   _DAT_020b0020 = (int)param_1;
   _DAT_020b0024 = (int)((ulong)param_1 >> 0x20);
@@ -1212,7 +1217,7 @@ void api_get_sw_info(int *param_1)
     if (-1 < (long)_DAT_03050130 << 0x20) {
       _DAT_0e000000 = _DAT_0305012c;
     }
-    api_tf_printf(&DAT_0440c2d0);
+    api_tf_printf(s_3_I_sw_info_0x_x_0440c2d0);
   }
   else {
     _DAT_03000084 = 0xb1001020;
@@ -1220,11 +1225,11 @@ void api_get_sw_info(int *param_1)
   piVar2 = (int *)&DAT_03050134;
   do {
     uVar1 = (ulong)*piVar2;
-    api_tf_printf(&DAT_0440c2e8,(long)(int)piVar2,uVar1);
+    api_tf_printf(s_3_I_EP_0x_x_0x_x__0440c2e8,(long)(int)piVar2,uVar1);
     if (((uVar1 != 0) && ((uVar1 & 1) == 0)) && ((int *)(uVar1 & 2) == param_1)) {
       custom0.rs1.rs2(uVar1 & 0xfffffffffffffffc,0);
       *(int *)(uVar1 & 2) = piVar2[1];
-      api_tf_printf(&DAT_0440c300,uVar1 & 0xfffffffffffffffc);
+      api_tf_printf(s_3_I_ES_0x_x_0x_x__0440c300,uVar1 & 0xfffffffffffffffc);
     }
     piVar2 = piVar2 + 2;
   } while (piVar2 != (int *)0x305018c);
@@ -1264,7 +1269,7 @@ p_rom_api_cryptodma_aes_decrypt
   api_memset(dma_descriptor,0,0x58);
   dest = api_phys_to_dma(plain);
   src = api_phys_to_dma(encrypted);
-  api_tf_printf(&DAT_0440c318,src,dest,len);
+  api_tf_printf(s_3_I_AES_0x_lx_0x_lx_0x_lx_0440c318,src,dest,len);
   dma_descriptor[0] = 0x220088020f;
   custom0();
   uStack_80 = len;
@@ -1282,10 +1287,10 @@ p_rom_api_cryptodma_aes_decrypt
   iVar2 = api_get_timer(0);
   do {
     lVar1 = (long)_DAT_02060010;
-    api_tf_printf(&DAT_0440c338,lVar1);
+    api_tf_printf(s_3_I_INT_status_0x_x_0440c338,lVar1);
     uVar3 = api_get_timer((long)iVar2);
     if (999 < uVar3) {
-      api_tf_printf(&DAT_0440c350);
+      api_tf_printf(s_0_E_Decryption_timeout_0440c350);
       return 0xfffffffffffffffb;
     }
   } while (lVar1 == 0);
@@ -1318,7 +1323,7 @@ undefined8 entry_calc_rsa(long param_1)
   }
   lVar1 = (long)_DAT_030501a0;
   custom0.rs1.rs2(lVar1,unaff_s4);
-  api_tf_printf(&DAT_0440c370,lVar1);
+  api_tf_printf(s_2VRK_d__0440c370,lVar1);
   if (lVar1 == 1) {
     puVar3 = &DAT_0440e020;
   }
@@ -1398,7 +1403,7 @@ long entry_verify_rsa_0x600(long param_1)
   lVar1 = (long)_DAT_030501a0;
   custom0.rs1.rs2(lVar1,&stack0xffffffffffffffe0);
   if (lVar1 != 0) {
-    api_tf_printf(&DAT_0440c380);
+    api_tf_printf(s_2VBK__0440c380);
     lVar1 = p_rom_api_verify_rsa
                       (param_1 + 0x600,uVar2,param_1 + 0x800,*(uint *)(param_1 + 0xb4) & 3);
     if (-1 < lVar1) {
@@ -1421,7 +1426,7 @@ undefined8 entry_verify_rsa_0x0e8(long param_1)
   custom0.rs1.rs2((long)_DAT_030501a0,&stack0x00000000);
   if ((long)_DAT_030501a0 != 0) {
     iVar1 = *(int *)(param_1 + 0xbc);
-    uVar2 = api_tf_printf(&DAT_0440c388);
+    uVar2 = api_tf_printf(s_2VCC__0440c388);
     custom0.rs1.rs2((long)iVar1,0);
     if (0x2f8 < (ulong)(long)iVar1) {
       uVar2 = 0x2f8;
@@ -1459,7 +1464,7 @@ undefined8 entry_aes_decrypt_0x3e0(long param_1)
   }
   lVar1 = (long)_DAT_030501a0;
   custom0.rs1.rs2(lVar1,unaff_s7);
-  api_tf_printf(&DAT_0440c390,lVar1);
+  api_tf_printf(s_2DK_d__0440c390,lVar1);
   if (lVar1 == 1) {
     puVar2 = &DAT_0440e070;
   }
@@ -1497,7 +1502,7 @@ undefined8 entry_aes_decrypt_0x0d8(long param_1,undefined8 param_2)
   uStack_28 = 0;
   custom0.rs1.rs2((long)_DAT_030501a0,in_t1);
   if ((long)_DAT_030501a0 != 0) {
-    api_tf_printf(&DAT_0440c398);
+    api_tf_printf(s_2DB2__0440c398);
     p_rom_api_cryptodma_aes_decrypt
               (param_2,param_2,*(undefined4 *)(param_1 + 0xd8),param_1 + 0x3e0,&local_30);
     api_memcpy(param_2,0x3c005000,0x10);
@@ -1516,7 +1521,7 @@ undefined8 entry_verify_rsa_0x0c4(long param_1,undefined8 param_2)
   
   custom0.rs1.rs2((long)_DAT_030501a0,&stack0x00000000);
   if ((long)_DAT_030501a0 != 0) {
-    api_tf_printf(&DAT_0440c3a0);
+    api_tf_printf(s_2VCP__0440c3a0);
     uVar1 = p_rom_api_verify_rsa
                       (param_2,*(undefined4 *)(param_1 + 0xc4),param_1 + 0xe00,
                        *(uint *)(param_1 + 0xb4) & 3);
@@ -1537,7 +1542,7 @@ long entry_verify_rsa_0x0d8(long param_1,long param_2)
   lVar1 = (long)_DAT_030501a0;
   custom0.rs1.rs2(lVar1,&stack0xffffffffffffffe0);
   if (lVar1 != 0) {
-    api_tf_printf(&DAT_0440c3a8);
+    api_tf_printf(s_2VB2__0440c3a8);
     if (*(int *)(param_2 + 0x10) == _DAT_03050114) {
       if (*(int *)(param_2 + 0x14) == _DAT_03050194) {
         lVar1 = p_rom_api_verify_rsa
@@ -1559,7 +1564,7 @@ long entry_verify_rsa_0x0d8(long param_1,long param_2)
 void entry_sw_info_2(void)
 
 {
-  api_tf_printf(&DAT_0440c3b0);
+  api_tf_printf(s_3_I_ep_swinfo__0440c3b0);
   api_get_sw_info(2);
   return;
 }
@@ -1569,7 +1574,7 @@ void entry_sw_info_2(void)
 void entry_sw_info_0(void)
 
 {
-  api_tf_printf(&DAT_0440c3c8);
+  api_tf_printf(s_3_I_ep_dev__0440c3c8);
   api_get_sw_info(0);
   return;
 }
@@ -3179,7 +3184,7 @@ void FUN_set_DAT_03001000_04403c4c(long param_1)
         }
         return;
       }
-      api_tf_printf(&DAT_0440c428);
+      api_tf_printf(s_0_E_unknown_pinmux_0440c428);
       return;
     }
     _DAT_03001030 = _DAT_03001030 & 0xfffffff8 | 2;
@@ -3273,7 +3278,7 @@ void FUN_04403e30(long param_1)
 void FUN_set_DAT_0431002c_04403eaa(void)
 
 {
-  api_tf_printf(&DAT_0440c440,s_bm_sd_phy_init_0440c4e0);
+  api_tf_printf(s_3_I__s_0440c440,s_bm_sd_phy_init_0440c4e0);
   _DAT_0431002c = _DAT_0431002c & 0x3f | 0x200;
   api_delay_ms(1);
   do {
@@ -3388,18 +3393,18 @@ undefined8 entry_get_fip(void)
 {
   int iVar1;
   
-  api_tf_printf(&DAT_0440c440,s_sd_open_fip_0440c4d0);
-  iVar1 = FUN_0440ad88(0x3c007b28,&DAT_0440c450,1);
+  api_tf_printf(s_3_I__s_0440c440,s_sd_open_fip_0440c4d0);
+  iVar1 = FUN_mount_sd_0440ad88(0x3c007b28,s_0__0440c450,1);
   if (iVar1 == 0) {
-    iVar1 = FUN_0440add6(0x3c007d70,s_0_fip_bin_0440c478,1);
+    iVar1 = FUN_get_fip_0440add6(0x3c007d70,s_0_fip_bin_0440c478,1);
     if (iVar1 == 0) {
       return 0;
     }
-    api_tf_printf(&DAT_0440c488);
-    api_tf_printf(&DAT_0440c4a8);
+    api_tf_printf(s_3_I_NO_fip_bin_in_SD___d__0440c488);
+    api_tf_printf(s_2SNF__0440c4a8);
   }
   else {
-    api_tf_printf(&DAT_0440c458);
+    api_tf_printf(s_0_E_Mount_SD_failed___d__0440c458);
   }
   return 0xffffffffffffffff;
 }
@@ -3417,7 +3422,7 @@ ulong api_load_sd(undefined8 param_1,undefined8 param_2,undefined8 param_3)
   local_24 = 0;
   FUN_0440b2ba(0x3c007d70);
   iVar1 = FUN_0440b116(0x3c007d70,param_1,param_3,&local_24);
-  api_tf_printf(&DAT_0440c4b0,param_2,param_3,(long)local_24,(long)iVar1);
+  api_tf_printf(s_2SD_0x_x_0x_x_0x_x__d__0440c4b0,param_2,param_3,(long)local_24,(long)iVar1);
   uVar2 = (ulong)((long)iVar1 != 0);
   custom0.rs1(uVar2);
   return uVar2;
@@ -3466,7 +3471,7 @@ undefined8 entry_uart_init(void)
   long lVar5;
   
   lVar4 = FUN_set_DAT_03000084_044006e8();
-  api_tf_printf(&DAT_0440c4c8);
+  api_tf_printf(s_2URPL__0440c4c8);
   iVar2 = api_get_timer(0);
   _DAT_03000084 = 0xc0004004;
   FUN_set_DAT_03000088_044002ac(1000000);
@@ -3480,11 +3485,12 @@ undefined8 entry_uart_init(void)
       if (lVar4 != 0) {
         FUN_check_DAT_03000080_0440072c();
       }
-      lVar5 = FUN_get_DAT_04140014_044003c8();
+      lVar5 = FUN_get_uart_DAT_04140014_044003c8();
     } while (lVar5 == 0);
     uVar3 = api_uart0_getc();
     uVar1 = uVar1 << 8 | uVar3 & 0xff;
   } while (uVar1 != 0x5552444c);
+                    // URDL
   return 1;
 }
 
@@ -3495,9 +3501,9 @@ undefined8 entry_uart_init(void)
 undefined8 entry_init(void)
 
 {
-  int iVar1;
-  long lVar2;
-  undefined8 uVar3;
+  int boot_src;
+  long lVar1;
+  undefined8 uVar2;
   undefined8 unaff_s11;
   
   _DAT_03000084 = 0xb100f001;
@@ -3513,49 +3519,49 @@ undefined8 entry_init(void)
   }
   FUN_set_DAT_03001a00_04403d78();
   _DAT_03000084 = 0xb100f002;
-  lVar2 = FUN_check_DAT_0e000003_04403f94();
-  if (lVar2 == 0) {
+  lVar1 = FUN_check_DAT_0e000003_04403f94();
+  if (lVar1 == 0) {
 LAB_044042a4:
-    lVar2 = FUN_check_DAT_0e000002_04403fc4();
-    if ((lVar2 != 0) && (lVar2 = FUN_set_DAT_3c00521_04405088(), lVar2 != 0)) {
+    lVar1 = FUN_check_DAT_0e000002_04403fc4();
+    if ((lVar1 != 0) && (lVar1 = FUN_set_DAT_3c00521_04405088(), lVar1 != 0)) {
       FUN_set_DAT_03001000_04403c4c(0x16);
       FUN_set_DAT_0431002c_04403eaa();
       entry_sw_info_0();
-      uVar3 = CONCAT44(_DAT_0e000004,
+      uVar2 = CONCAT44(_DAT_0e000004,
                        CONCAT13(DAT_0e000003,CONCAT21(uRam000000000e000001,DAT_0e000000)));
-      custom0.rs1.rs2(uVar3,tp);
-      lVar2 = entry_sd_init(uVar3);
-      if ((-1 < lVar2) && (lVar2 = entry_get_fip(), -1 < lVar2)) {
-        uVar3 = 0xcea0;
+      custom0.rs1.rs2(uVar2,tp);
+      lVar1 = entry_sd_init(uVar2);
+      if ((-1 < lVar1) && (lVar1 = entry_get_fip(), -1 < lVar1)) {
+        uVar2 = 0xcea0;
         goto LAB_0440427a;
       }
     }
-    lVar2 = FUN_check_DAT_0e000003_04403ffa();
-    if (lVar2 != 0) {
+    lVar1 = FUN_check_DAT_0e000003_04403ffa();
+    if (lVar1 != 0) {
       entry_usb_init();
       entry_sw_info_0();
-      lVar2 = api_load_usb(0,0,0);
-      if (lVar2 == 1) {
-        uVar3 = 0xcea3;
+      lVar1 = api_load_usb(0,0,0);
+      if (lVar1 == 1) {
+        uVar2 = 0xcea3;
         goto LAB_0440427a;
       }
       FUN_set_DAT_03002030_0440a328();
     }
-    iVar1 = p_rom_api_get_boot_src();
+    boot_src = p_rom_api_get_boot_src();
                     // boot_src = SD/USB
-    if ((5 < (ulong)(long)(iVar1 + -0xcea0)) ||
-       ((1L << ((long)(iVar1 + -0xcea0) & 0x3fU) & 0x29U) == 0)) {
-      uVar3 = p_rom_api_flash_init();
-      return uVar3;
+    if ((5 < (ulong)(long)(boot_src + -0xcea0)) ||
+       ((1L << ((long)(boot_src + -0xcea0) & 0x3fU) & 0x29U) == 0)) {
+      uVar2 = p_rom_api_flash_init();
+      return uVar2;
     }
   }
   else {
     entry_sw_info_0();
-    lVar2 = entry_uart_init();
-    if (lVar2 == 0) goto LAB_044042a4;
-    uVar3 = 0xcea5;
+    lVar1 = entry_uart_init();
+    if (lVar1 == 0) goto LAB_044042a4;
+    uVar2 = 0xcea5;
 LAB_0440427a:
-    p_rom_api_set_boot_src(uVar3);
+    p_rom_api_set_boot_src(uVar2);
   }
   return 0;
 }
@@ -3570,7 +3576,7 @@ ulong FUN_0440432e(void)
   int iVar1;
   int iVar2;
   ulong uVar3;
-  undefined *puVar4;
+  char *pcVar4;
   undefined4 local_60;
   int iStack_5c;
   undefined4 uStack_58;
@@ -3589,7 +3595,7 @@ ulong FUN_0440432e(void)
     if ((uStack_54 & 0x80) != 0) break;
     iVar2 = api_get_timer((long)iVar1);
     if (5000 < (ulong)(long)iVar2) {
-      puVar4 = &DAT_0440c518;
+      pcVar4 = s_0_E__s_Card_stuck_in_programming_0440c518;
       goto LAB_0440439e;
     }
     if (((long)(int)uStack_54 & 0x100U) != 0) {
@@ -3597,9 +3603,9 @@ ulong FUN_0440432e(void)
       return (long)iVar2;
     }
   }
-  puVar4 = &DAT_0440c4f0;
+  pcVar4 = s_0_E__s_Response_with_Error__0x_0_0440c4f0;
 LAB_0440439e:
-  api_tf_printf(puVar4,s_sd_device_state_0440c610);
+  api_tf_printf(pcVar4,s_sd_device_state_0440c610);
   return 0xfffffffffffffffb;
 }
 
@@ -3738,13 +3744,13 @@ long api_sd_init(long *param_1,long param_2,ulong param_3,uint param_4)
           uVar2 = api_get_timer((long)iVar1);
           if (0x5dc < uVar2) {
             iVar1 = api_get_timer((long)iVar1);
-            api_tf_printf(&DAT_0440c570,(long)iVar1);
+            api_tf_printf(s_0_E_SD_card_identified_timeout____0440c570,(long)iVar1);
             return -5;
           }
         }
         custom0.rs1.rs2((long)uStack_94,in_t5);
         if (pcVar6 == (code *)0x0) {
-          api_tf_printf(&DAT_0440c598);
+          api_tf_printf(s_3_I_SDSC_ocr_0x_x_0440c598);
           _DAT_3c007fd8 = _DAT_3c007fd8 | 0x10;
         }
         FUN_04400250(&local_a0,0x1c);
@@ -3757,7 +3763,7 @@ long api_sd_init(long *param_1,long param_2,ulong param_3,uint param_4)
         api_memcpy(0x3c007fb8,&uStack_94,0x10);
         uVar4 = CONCAT17(uRam000000003c007fc7,CONCAT16(DAT_3c007fc6,_DAT_3c007fc0));
         custom0.rs1.rs2(uVar4,0x3c007fb0);
-        api_tf_printf(&DAT_0440c5b0,DAT_3c007fc6,uVar4,0x3c007fbe);
+        api_tf_printf(s_3_I_cid_mid_0x_x_card_bga_0x_x_n_0440c5b0,DAT_3c007fc6,uVar4,0x3c007fbe);
         FUN_04400250(&local_a0,0x1c);
         local_a0 = CONCAT44(local_a0._4_4_,3);
         uStack_98 = 1;
@@ -3766,7 +3772,7 @@ long api_sd_init(long *param_1,long param_2,ulong param_3,uint param_4)
           return lVar3;
         }
         _DAT_3c007fdc = uStack_94._2_2_;
-        api_tf_printf(&DAT_0440c5e0);
+        api_tf_printf(s_3_I_sd_rca__d_0440c5e0);
         FUN_04400250(&local_a0,0x1c);
         uStack_98 = 4;
         local_a0 = CONCAT44((uint)_DAT_3c007fdc << 0x10,9);
@@ -3776,7 +3782,7 @@ long api_sd_init(long *param_1,long param_2,ulong param_3,uint param_4)
           uVar5 = custom0.rd();
           custom0.rs1.rs2(uVar5,&local_a0);
           custom0.rs1.rs2(uVar4,(long)(int)param_3);
-          api_tf_printf(&DAT_0440c5f0,uVar5);
+          api_tf_printf(s_3_I_csd_vers_0x_x_egs_0x_x_0440c5f0,uVar5);
           FUN_04400250(&local_a0,0x1c);
           uStack_98 = 1;
           local_a0 = CONCAT44((uint)_DAT_3c007fdc << 0x10,7);
@@ -3819,7 +3825,7 @@ long api_sd_init(long *param_1,long param_2,ulong param_3,uint param_4)
     }
     iVar1 = iVar1 + 0x28;
     if (iVar1 == 0x14a) {
-      api_tf_printf(&DAT_0440c550);
+      api_tf_printf(s_0_E_SD_card_init_timeout___0440c550);
       return -0x16;
     }
   } while( true );
@@ -3868,14 +3874,16 @@ undefined8 FUN_044048d4(int *param_1)
       uVar2 = (ulong)*(ushort *)(lVar1 + 0x30);
       custom0.rs1.rs2(uVar2,0);
       custom0.rs1.rs2((ulong)*(ushort *)(lVar1 + 0x32),0);
-      api_tf_printf(&DAT_0440c620,s_bm_sd_send_cmd_without_data_0440c778,(long)*param_1,uVar2,
+      api_tf_printf(s_0_E__s_CMD___u_INT_STAT__0x_x_IN_0440c620,
+                    s_bm_sd_send_cmd_without_data_0440c778,(long)*param_1,uVar2,
                     (ulong)*(ushort *)(lVar1 + 0x32));
       return 0xfffffffffffffffb;
     }
     if ((uVar5 & 1) != 0) break;
     uVar4 = api_get_timer((long)iVar3);
     if (100 < uVar4) {
-      api_tf_printf(&DAT_0440c650,s_bm_sd_send_cmd_without_data_0440c778,(long)*param_1);
+      api_tf_printf(s_0_E__s_send_CMD__u_timeout__0440c650,s_bm_sd_send_cmd_without_data_0440c778,
+                    (long)*param_1);
       return 0xfffffffffffffffb;
     }
   }
@@ -3925,7 +3933,7 @@ undefined8 FUN_04404c1c(long param_1)
   ushort *puVar1;
   int iVar2;
   long lVar3;
-  undefined *puVar4;
+  char *pcVar4;
   ulong uVar5;
   
   if (param_1 < 1) {
@@ -3941,7 +3949,8 @@ undefined8 FUN_04404c1c(long param_1)
   }
   if (-1 < (long)((ulong)*(ushort *)(long)(_DAT_3c005210 + 0x3e) << 0x30)) {
     puVar1 = (ushort *)(long)(_DAT_3c005210 + 0x2c);
-    api_tf_printf(&DAT_0440c6d0,param_1,lVar3,(long)(_DAT_3c00522c / ((int)lVar3 << 1)));
+    api_tf_printf(s_3_I_SDCLK___d__d__d__d__0440c6d0,param_1,lVar3,
+                  (long)(_DAT_3c00522c / ((int)lVar3 << 1)));
     custom0.rs1.rs2((ulong)*puVar1,0);
     uVar5 = (ulong)*puVar1 & 0xfffffffffffffff6;
     custom0.rs1.rs2(uVar5,0);
@@ -3965,9 +3974,9 @@ LAB_04404cca:
       api_delay_us(100);
     } while (iVar2 != 0);
   }
-  puVar4 = &DAT_0440c6b8;
+  pcVar4 = s_0_E_Err_SD_PLL_0440c6b8;
 LAB_04404c6c:
-  api_tf_printf(puVar4);
+  api_tf_printf(pcVar4);
   return 0xfffffffffffffffb;
 code_r0x04404cd2:
   iVar2 = iVar2 + -1;
@@ -3975,7 +3984,7 @@ code_r0x04404cd2:
   if (iVar2 == 0) goto code_r0x04404cde;
   goto LAB_04404cca;
 code_r0x04404cde:
-  puVar4 = &DAT_0440c6f0;
+  pcVar4 = s_0_E_Err_SD_INTERNAL_CLK_EN_0440c6f0;
   goto LAB_04404c6c;
 }
 
@@ -4062,7 +4071,7 @@ void FUN_04404d22(undefined8 param_1)
   *(undefined2 *)(lVar2 + 0x34) = 0xffff;
   uVar1 = *(undefined2 *)(lVar2 + 0x36);
   *(undefined2 *)(lVar2 + 0x36) = 0xffff;
-  api_tf_printf(&DAT_0440c710,uVar1);
+  api_tf_printf(s_3_I_SD_init_done_0440c710,uVar1);
   return;
 }
 
@@ -4116,7 +4125,8 @@ LAB_04404f04:
         *puVar4 = (ushort)uVar6;
       }
       else {
-        api_tf_printf(&DAT_0440c6d0,param_1,lVar3,(long)(iVar2 / ((int)lVar3 << 1)));
+        api_tf_printf(s_3_I_SDCLK___d__d__d__d__0440c6d0,param_1,lVar3,
+                      (long)(iVar2 / ((int)lVar3 << 1)));
         uVar6 = (long)((int)lVar3 << 8) | (ulong)*puVar1 & 0xdf;
         custom0.rs1.rs2(uVar6,0);
         *puVar1 = (ushort)uVar6;
@@ -4135,7 +4145,7 @@ LAB_04404f04:
         iVar2 = iVar2 + -1;
         api_delay_us(100);
       } while (iVar2 != 0);
-      api_tf_printf(&DAT_0440c6b8);
+      api_tf_printf(s_0_E_Err_SD_PLL_0440c6b8);
       return -5;
     }
   }
@@ -4148,7 +4158,7 @@ LAB_04404f04:
     }
   }
   else {
-    api_tf_printf(&DAT_0440c728,s_bm_sd_set_ios_0440c7b8);
+    api_tf_printf(s_0_E__s_Invalid_Bus_width___d_0440c728,s_bm_sd_set_ios_0440c7b8);
     lVar3 = -0x16;
   }
   return lVar3;
@@ -4186,10 +4196,10 @@ long entry_sd_init(undefined1 param_1)
   uVar1 = FUN_ret_017D7840_04403d6e();
   _DAT_3c00522c = (undefined4)uVar1;
   DAT_3c005228 = param_1;
-  api_tf_printf(&DAT_0440c748,uVar1,6000000);
+  api_tf_printf(s_2SDI__d__d__0440c748,uVar1,6000000);
   lVar2 = api_sd_init(&PTR_FUN_0440c7c8,6000000,(long)_DAT_3c005230,(long)_DAT_3c005234);
   if (lVar2 < 0) {
-    api_tf_printf(&DAT_0440c758);
+    api_tf_printf(s_0_E_SD_initailizing_failed_0440c758);
   }
   return lVar2;
 }
@@ -4249,7 +4259,7 @@ undefined8 FUN_0440512e(void)
 void FUN_04405184(void)
 
 {
-  api_tf_printf(&DAT_0440c7f8);
+  api_tf_printf(s_3_I_Application__reset_0440c7f8);
   return;
 }
 
@@ -4260,7 +4270,7 @@ void FUN_04405184(void)
 void FUN_044051b6(void)
 
 {
-  api_tf_printf(&DAT_0440c838);
+  api_tf_printf(s_3_I_usb_unbind_0440c838);
   _DAT_3c0053b8 = 0;
   return;
 }
@@ -4274,10 +4284,10 @@ undefined8 FUN_044051d4(long param_1)
 {
   long lVar1;
   
-  api_tf_printf(&DAT_0440c850);
+  api_tf_printf(s_3_I_usb_bind_0440c850);
   lVar1 = param_1;
   if (_DAT_3c0053b8 != 0) {
-    api_tf_printf(&DAT_0440c860);
+    api_tf_printf(s_2USBB__0440c860);
     lVar1 = _DAT_3c0053b8;
   }
   _DAT_3c0053b8 = lVar1;
@@ -4390,7 +4400,7 @@ undefined8 FUN_0440559e(undefined8 *param_1,byte *param_2)
           uVar10 = (*(code *)(lVar8 + 0x440c9bc))((code *)(lVar8 + 0x440c9bc));
           return uVar10;
         }
-        api_tf_printf(&DAT_0440c8e8);
+        api_tf_printf(s_3_I_recipient_target_cannot_be_i_0440c8e8);
         return 0xffffffffffffffff;
       }
       if (1 < uVar4) {
@@ -4510,16 +4520,16 @@ void FUN_044059e2(void)
 void FUN_04405a5c(void)
 
 {
-  api_tf_printf(&DAT_0440c9f8,_DAT_3c0052d0);
+  api_tf_printf(s_3_I_bulkBufAlloc___p_0440c9f8,_DAT_3c0052d0);
   api_tf_printf(&DAT_0440ca10,_DAT_3c0052f8);
-  api_tf_printf(&DAT_0440ca28,_DAT_3c0052e0);
-  api_tf_printf(&DAT_0440ca40,_DAT_3c0052e8);
-  api_tf_printf(&DAT_0440ca58,_DAT_3c0052f0);
-  api_tf_printf(&DAT_0440ca70,_DAT_3c005408);
-  api_tf_printf(&DAT_0440ca88,_DAT_3c005488);
-  api_tf_printf(&DAT_0440caa0,_DAT_3c005250);
-  api_tf_printf(&DAT_0440cab8,_DAT_3c005490);
-  api_tf_printf(&DAT_0440cad0,_DAT_3c005468);
+  api_tf_printf(s_3_I_cb0_buf___p_0440ca28,_DAT_3c0052e0);
+  api_tf_printf(s_3_I_cb1_buf___p_0440ca40,_DAT_3c0052e8);
+  api_tf_printf(s_3_I_cb2_buf___p_0440ca58,_DAT_3c0052f0);
+  api_tf_printf(s_3_I_ep0BuffAlloc___p_0440ca70,_DAT_3c005408);
+  api_tf_printf(s_3_I_rsp_buf___p_0440ca88,_DAT_3c005488);
+  api_tf_printf(s_3_I_acm_buf___p_0440caa0,_DAT_3c005250);
+  api_tf_printf(s_3_I_setup_buf___p_0440cab8,_DAT_3c005490);
+  api_tf_printf(s_3_I_handler___p_0440cad0,_DAT_3c005468);
   return;
 }
 
@@ -4631,7 +4641,7 @@ ulong FUN_04405cac(long param_1,undefined4 param_2,int param_3)
   int iVar6;
   int iVar7;
   long lVar8;
-  undefined *puVar9;
+  char *pcVar9;
   ulong uVar10;
   undefined8 *puVar11;
   
@@ -4644,20 +4654,20 @@ ulong FUN_04405cac(long param_1,undefined4 param_2,int param_3)
   _DAT_3c008044 = param_3;
   lVar8 = FUN_04405c70();
   if (lVar8 == 0) {
-    api_tf_printf(&DAT_0440cb00);
+    api_tf_printf(s_3_I_USB_vbus_is_off_0440cb00);
 LAB_04405d1e:
     uVar10 = 0xfffffffffffffffb;
   }
   else {
     iVar6 = FUN_04405c7c();
     uVar5 = (ulong)iVar6;
-    api_tf_printf(&DAT_0440cb18,uVar5);
+    api_tf_printf(s_3_I_timeout_in_ms__d_0440cb18,uVar5);
     if (0x1869e < uVar5) {
       DAT_3c008048 = '\x01';
-      api_tf_printf(&DAT_0440cb30);
+      api_tf_printf(s_2USBC__0440cb30);
       _DAT_03000084 = 0xc0003003;
     }
-    api_tf_printf(&DAT_0440cb38,uVar5);
+    api_tf_printf(s_3_I_USB_polling_timeout_in_ms____0440cb38,uVar5);
     while( true ) {
       _DAT_3c007ff0 = 0;
       _DAT_3c008008 = 0;
@@ -4684,13 +4694,13 @@ LAB_04405d1e:
       lVar8 = FUN_04406baa(0x3c005410);
       puVar2 = _DAT_3c0053b8;
       if (lVar8 < 0) {
-        puVar9 = &DAT_0440cb60;
+        pcVar9 = s_3_I_Gadget_Register_Fail_0440cb60;
 LAB_04405e60:
-        api_tf_printf(puVar9);
+        api_tf_printf(pcVar9);
         break;
       }
       if (_DAT_3c0053b8 == (undefined8 *)0x0) {
-        puVar9 = &DAT_0440cb80;
+        pcVar9 = &DAT_0440cb80;
         goto LAB_04405e60;
       }
       FUN_04405b32();
@@ -4750,12 +4760,12 @@ LAB_04405e60:
           lVar4 = _DAT_3c008000;
           *(undefined4 *)(lVar8 + 0x18) = _DAT_3c00809c;
           (**(code **)(puVar11[4] + 0x20))(lVar4,*(code **)(puVar11[4] + 0x20));
-          api_tf_printf(&DAT_0440cbb8,(long)*(int *)(puVar2 + 4));
+          api_tf_printf(s_3_I_connection_speed___d_0440cbb8,(long)*(int *)(puVar2 + 4));
           _DAT_3c0080a0 = api_get_timer(0);
           while (FUN_04405b2c(), DAT_3c007fe8 != '\0') {
             if (DAT_3c008010 != '\0') {
 LAB_0440601e:
-              api_tf_printf(&DAT_0440cbf0);
+              api_tf_printf(s_2USBL__0440cbf0);
               _DAT_03000084 = 0xc0003006;
               (**(code **)(puVar2[2] + 0x28))(puVar2,0,*(code **)(puVar2[2] + 0x28));
               FUN_044063d4(0x3c005410);
@@ -4764,13 +4774,13 @@ LAB_0440601e:
             if (DAT_3c008048 == '\0') {
               iVar7 = api_get_timer((long)_DAT_3c0080a0);
               if (uVar5 < (ulong)(long)iVar7) {
-                api_tf_printf(&DAT_0440cbd8,uVar5);
+                api_tf_printf(s_2USBW__d__0440cbd8,uVar5);
                 _DAT_03000084 = 0xc0003005;
                 goto LAB_0440601e;
               }
             }
             else if ((DAT_3c008048 == '\x01') && (_DAT_3c008044 == 0)) {
-              api_tf_printf(&DAT_0440cbe8);
+              api_tf_printf(s_2USBD__0440cbe8);
               return 1;
             }
           }
@@ -4778,13 +4788,13 @@ LAB_0440601e:
         FUN_04405b2c();
         iVar7 = api_get_timer((long)_DAT_3c0080a0);
         if ((uVar5 < (ulong)(long)iVar7) && (DAT_3c008048 == '\0')) {
-          api_tf_printf(&DAT_0440cba8);
+          api_tf_printf(s_2USBEF__0440cba8);
           _DAT_03000084 = 0xc0003004;
           goto LAB_04405d1e;
         }
       } while (DAT_3c008049 == '\0');
     }
-    api_tf_printf(&DAT_0440cbf8,(long)(int)uVar10);
+    api_tf_printf(s_0_E_USB_Error__u_0440cbf8,(long)(int)uVar10);
     _DAT_03000084 = 0xc0003007;
   }
   return uVar10;
@@ -6308,7 +6318,7 @@ undefined8 api_load_usb(undefined8 param_1,undefined8 param_2,undefined8 param_3
   FUN_044002a6();
   custom0.rs1.rs2(_DAT_0e000000,in_t0);
   _DAT_3c0054f0 = 0;
-  api_tf_printf(&DAT_0440cf70,0xe000000);
+  api_tf_printf(s_3_I_USBVID__x__0440cf70,0xe000000);
   custom0.rs1.rs2(param_3,0);
   api_flush_dcache_range(param_1,param_3);
   uVar1 = FUN_04405cac(param_1,param_2,param_3);
@@ -6327,10 +6337,10 @@ void entry_usb_init(void)
   if ((DAT_0e000002 & 0x20) == 0) {
     _DAT_030000b4 = _DAT_030000b4 | 0x80;
   }
-  api_tf_printf(&DAT_0440cf88,s_cv_usb_hw_init_0440cfa0);
+  api_tf_printf(s_3_I__s_done_0440cf88,s_cv_usb_hw_init_0440cfa0);
   _DAT_03000084 = 0xc0003002;
   api_usb_init();
-  api_tf_printf(&DAT_0440cf98);
+  api_tf_printf(s_2USBI__0440cf98);
   return;
 }
 
@@ -6432,7 +6442,8 @@ LAB_04408400:
     }
     iVar2 = iVar2 + -1;
     if (iVar2 == 0) {
-      api_tf_printf(&DAT_0440cfb0,0x989681,s_spi_nand_get_feature_0440d1c8);
+      api_tf_printf(s_0_E_SPINAND_command_error__no_in_0440cfb0,0x989681,
+                    s_spi_nand_get_feature_0440d1c8);
       goto LAB_04408400;
     }
     api_delay_us(1);
@@ -6441,7 +6452,7 @@ LAB_04408400:
 
 
 
-void FUN_04408422(void)
+void FUN_spi_nand_04408422(void)
 
 {
   int iVar1;
@@ -6451,7 +6462,8 @@ void FUN_04408422(void)
   do {
     iVar1 = iVar1 + -1;
     if (iVar1 == 0) {
-      api_tf_printf(&DAT_0440cfe8,0x5f5e101,s_spi_nand_polling_oip_0440d190);
+      api_tf_printf(s_0_E_SPINAND_is_still_busy_over_1_0440cfe8,0x5f5e101,
+                    s_spi_nand_polling_oip_0440d190);
       return;
     }
     uVar2 = FUN_0440839a(DAT_3c0080f6);
@@ -6481,12 +6493,13 @@ void FUN_04408486(undefined8 param_1,undefined8 param_2)
     if ((_DAT_3c0080c8[7] & 1) != 0) {
 LAB_04408500:
       _DAT_3c0080c8[5] = _DAT_3c0080c8[5] | 1;
-      FUN_04408422();
+      FUN_spi_nand_04408422();
       return;
     }
     iVar2 = iVar2 + -1;
     if (iVar2 == 0) {
-      api_tf_printf(&DAT_0440cfb0,0x989681,s_spi_nand_read_page_by_row_addr_0440d1a8);
+      api_tf_printf(s_0_E_SPINAND_command_error__no_in_0440cfb0,0x989681,
+                    s_spi_nand_read_page_by_row_addr_0440d1a8);
       goto LAB_04408500;
     }
     api_delay_us(1);
@@ -6517,7 +6530,8 @@ LAB_04408586:
     }
     iVar2 = iVar2 + -1;
     if (iVar2 == 0) {
-      api_tf_printf(&DAT_0440cfb0,0x989681,s_spi_nand_set_feature_0440d178);
+      api_tf_printf(s_0_E_SPINAND_command_error__no_in_0440cfb0,0x989681,
+                    s_spi_nand_set_feature_0440d178);
       goto LAB_04408586;
     }
     api_delay_us(1);
@@ -6679,14 +6693,15 @@ void FUN_0440880c(void)
 LAB_0440886e:
       uVar1 = _DAT_3c0080c8[0x19];
       custom0.rs1.rs2((long)(int)uVar1,(long)(int)uVar1);
-      api_tf_printf(&DAT_0440d030,(long)(int)uVar1 & 0xff);
+      api_tf_printf(s_3_I_MID___0x_x__DID___0x_x_0440d030,(long)(int)uVar1 & 0xff);
       custom0.rs1.rs2((long)(int)uVar1,0);
       _DAT_3c0080c8[5] = _DAT_3c0080c8[5] | 1;
       return;
     }
     iVar3 = iVar3 + -1;
     if (iVar3 == 0) {
-      api_tf_printf(&DAT_0440cfb0,0x989681,s_cv_spi_nand_read_id_0440d160);
+      api_tf_printf(s_0_E_SPINAND_command_error__no_in_0440cfb0,0x989681,
+                    s_cv_spi_nand_read_id_0440d160);
       goto LAB_0440886e;
     }
     api_delay_us(1);
@@ -6719,12 +6734,13 @@ undefined8 FUN_044088ac(undefined8 param_1,undefined8 param_2,undefined8 param_3
   uVar1 = FUN_0440839a(DAT_3c0080f6);
   uVar1 = (DAT_3c0080f7 & uVar1) >> ((ulong)DAT_3c0080f8 & 0x1f) & 0xff;
   if (uVar1 != 0) {
-    api_tf_printf(&DAT_0440d050,(long)(int)(uVar3 >> ((ulong)DAT_3c0080ec & 0x1f)),
+    api_tf_printf(s_3_I_block__d__page__d__ecc_sts___0440d050,
+                  (long)(int)(uVar3 >> ((ulong)DAT_3c0080ec & 0x1f)),
                   (long)(int)(uVar3 % _DAT_3c0080e4),uVar1);
   }
   uVar2 = 0;
   if (DAT_3c0080f9 == uVar1) {
-    api_tf_printf(&DAT_0440d078);
+    api_tf_printf(s_3_I_ECC_UNCORR_0440d078);
     uVar2 = 2;
   }
   return uVar2;
@@ -6777,9 +6793,10 @@ void FUN_044089ee(undefined8 param_1)
 
 {
   api_memcpy(&DAT_3c0080d0,param_1,0x80);
-  api_tf_printf(&DAT_0440d090,(long)_DAT_3c0080d0,(long)_DAT_3c0080d4);
-  api_tf_printf(&DAT_0440d0c0,(long)_DAT_3c0080d8,(long)_DAT_3c0080e0,(long)_DAT_3c0080e4,
-                DAT_3c0080ed);
+  api_tf_printf(s_3_I_NAND_DEBUG__NAND_version_0x__0440d090,(long)_DAT_3c0080d0,(long)_DAT_3c0080d4)
+  ;
+  api_tf_printf(s_3_I_NAND_DEBUG__page_size__d__bl_0440d0c0,(long)_DAT_3c0080d8,(long)_DAT_3c0080e0,
+                (long)_DAT_3c0080e4,DAT_3c0080ed);
   return;
 }
 
@@ -6861,7 +6878,7 @@ undefined8 api_nand_reset(void)
   uint *puVar1;
   int iVar2;
   
-  api_tf_printf(&DAT_0440d138);
+  api_tf_printf(s_3_I_NAND_RS_0440d138);
   puVar1 = _DAT_3c0080c8;
   _DAT_3c0080c8[2] = 0;
   puVar1[3] = 0;
@@ -6874,12 +6891,13 @@ undefined8 api_nand_reset(void)
 LAB_04408c82:
       _DAT_3c0080c8[5] = _DAT_3c0080c8[5] | _DAT_3c0080c8[7];
       api_delay_ms(1);
-      FUN_04408422();
+      FUN_spi_nand_04408422();
       return 0;
     }
     iVar2 = iVar2 + -1;
     if (iVar2 == 0) {
-      api_tf_printf(&DAT_0440cfb0,0x989681,s_spi_nand_device_reset_0440d148);
+      api_tf_printf(s_0_E_SPINAND_command_error__no_in_0440cfb0,0x989681,
+                    s_spi_nand_device_reset_0440d148);
       goto LAB_04408c82;
     }
     api_delay_us(1);
@@ -6947,7 +6965,7 @@ ulong FUN_04408d3a(long param_1,ulong param_2,long param_3)
   long lVar5;
   
   if ((param_1 != 0) && (uVar3 = custom0.rd(), (int)uVar3 != *(int *)(param_3 + 8))) {
-    api_tf_printf(&DAT_0440d1e0);
+    api_tf_printf(s_0_E_Find_inconsistent_fip_store_i_0440d1e0);
   }
   custom0.rs1.rs2(param_1,0);
   pbVar4 = &DAT_3c0082d0;
@@ -7067,10 +7085,10 @@ LAB_04408ffe:
       if (cVar5 != cVar7) goto LAB_04408fe0;
       iVar3 = FUN_044088ac((long)iVar3,&DAT_3c003000,(long)*(int *)(param_3 + 8));
       if (iVar3 != 0) {
-        api_tf_printf(&DAT_0440d218,lVar12);
+        api_tf_printf(s_0_E_ECC_UNCORR_occurrd_on_page_0_0440d218,lVar12);
         goto LAB_04408fe0;
       }
-      lVar12 = api_memcmp(&DAT_3c003000,&DAT_0440d248,4);
+      lVar12 = api_memcmp(&DAT_3c003000,s_FIPB_0440d248,4);
       if (lVar12 == 0) {
         uVar10 = (ulong)_DAT_3c003004;
         lVar12 = (long)_DAT_3c003008;
@@ -7136,7 +7154,7 @@ LAB_044090fa:
         }
       }
       else {
-        lVar12 = api_memcmp(&DAT_3c003000,&DAT_0440d250,4);
+        lVar12 = api_memcmp(&DAT_3c003000,s_FIPH_0440d250,4);
         if (lVar12 == 0) {
           FUN_04408d3a(param_1,uVar2 & 0xff,&DAT_3c003000);
           if (((param_2 == 0) && (param_1 != 0)) && (lVar12 = custom0.rd(), _DAT_3c003008 == lVar12)
@@ -7182,12 +7200,12 @@ undefined8 FUN_04409182(void)
   long lVar5;
   
   _DAT_03000084 = 0xd0001002;
-  api_tf_printf(&DAT_0440d258);
+  api_tf_printf(s_3_I_NSF__0440d258);
   iVar3 = 0;
   do {
     iVar4 = FUN_044088ac((long)(iVar3 << 5),&DAT_3c003000,0x800);
     if (iVar4 == 0) {
-      lVar5 = api_memcmp(&DAT_3c003000,&DAT_0440d250,4);
+      lVar5 = api_memcmp(&DAT_3c003000,s_FIPH_0440d250,4);
       if (lVar5 == 0) {
         DAT_3c008348 = DAT_3c008348 | 1;
         FUN_044089ee(0x3c003020);
@@ -7199,7 +7217,7 @@ undefined8 FUN_04409182(void)
           *(undefined4 *)(&DAT_3c00817c + ((ulong)((long)(int)uVar1 << 0x20) >> 0x1d)) =
                _DAT_3c003008;
           _DAT_3c0082b8 = uVar2;
-          api_tf_printf(&DAT_0440d2a8);
+          api_tf_printf(s_3_I_NSFE__0440d2a8);
           return 0;
         }
         return 0xffffffffffffffea;
@@ -7209,7 +7227,7 @@ undefined8 FUN_04409182(void)
       }
     }
     else {
-      api_tf_printf(&DAT_0440d268,(long)iVar3);
+      api_tf_printf(s_0_E_Scan_nand_fip_header_found_E_0440d268,(long)iVar3);
     }
     iVar3 = iVar3 + 1;
   } while (iVar3 != 0x28);
@@ -7308,12 +7326,12 @@ LAB_04409386:
 LAB_0440949a:
           iVar2 = FUN_044088ac((long)iVar2,&DAT_3c003000,(long)*(int *)(lVar3 + 8));
           if (iVar2 == 0) {
-            lVar6 = api_memcmp(&DAT_3c003000,&DAT_0440d250,4);
+            lVar6 = api_memcmp(&DAT_3c003000,s_FIPH_0440d250,4);
             if (lVar6 == 0) {
               FUN_04408d3a(param_1,uVar13 & 0xff,&DAT_3c003000);
             }
             else {
-              lVar6 = api_memcmp(&DAT_3c003000,&DAT_0440d248,4);
+              lVar6 = api_memcmp(&DAT_3c003000,s_FIPB_0440d248,4);
               if (lVar6 == 0) {
                 FUN_04408cda(param_1,uVar13 & 0xff,&DAT_3c003000);
               }
@@ -7497,7 +7515,7 @@ undefined8 api_load_nand(ulong param_1,long param_2,uint param_3,ulong param_4)
   int extraout_a0;
   int iVar10;
   int extraout_a0_00;
-  undefined *puVar11;
+  char *pcVar11;
   long lVar12;
   long lVar13;
   long lVar14;
@@ -7550,7 +7568,7 @@ LAB_0440988a:
       }
     }
     if ((byte)(DAT_3c0082c4 - 3) < 0xfc) {
-      api_tf_printf(&DAT_0440d310);
+      api_tf_printf(s_3_I__________Wrong_current_fip_i_0440d310);
       DAT_3c0082c4 = 2;
     }
     lVar17 = FUN_04408a34();
@@ -7566,14 +7584,14 @@ LAB_0440988a:
     }
     if (DAT_3c0082cc != '\x01') {
       if ((*(int *)(lVar17 + 4) == 0) || (*(int *)(lVar17 + 4) == 0xffff)) {
-        puVar11 = &DAT_0440d348;
+        pcVar11 = s_1_W_No_nand_info_stored_in_fip_p_0440d348;
 LAB_04409a08:
-        api_tf_printf(puVar11);
+        api_tf_printf(pcVar11);
       }
       else {
         lVar12 = api_memcmp(lVar17 + 4,auStack_72,2);
         if (lVar12 != 0) {
-          puVar11 = &DAT_0440d370;
+          pcVar11 = s_1_W_scanned_id_does_not_match_id_0440d370;
           goto LAB_04409a08;
         }
       }
@@ -7586,7 +7604,7 @@ LAB_04409a08:
        (lVar12 = FUN_044097ea(uVar9), lVar12 != 0)) {
       lVar12 = FUN_044092a8(uVar9);
       if (lVar12 != 0) {
-        api_tf_printf(&DAT_0440d3a8,param_1);
+        api_tf_printf(s_0_E_FIP_dNC_0440d3a8,param_1);
         goto LAB_0440991c;
       }
       DAT_3c0082c4 = (byte)uVar9;
@@ -7610,13 +7628,13 @@ LAB_04409a08:
       uVar19 = custom0.rd();
       bVar1 = *(byte *)(lVar17 + 0x1c);
       if ((uVar19 & 0xff) == 1) {
-        api_tf_printf(&DAT_0440d3b8,uVar28);
+        api_tf_printf(s_0_E_Read_a_bad_block_at_blk__d_0440d3b8,uVar28);
       }
       uVar19 = FUN_044088ac((long)(int)((int)uVar28 << ((ulong)bVar1 & 0x1f) | uVar8),&DAT_3c003000,
                             uVar24);
       lVar13 = (long)extraout_a0;
       if (lVar13 != 0) {
-        api_tf_printf(&DAT_0440d3e0,uVar27,uVar28);
+        api_tf_printf(s_0_E_ECC_UNCORR_P_dB_d_RBP_0440d3e0,uVar27,uVar28);
         lVar14 = FUN_04408a34();
         custom0.rs1.rs2((long)(int)uVar6,0);
         uVar23 = uVar22;
@@ -7724,7 +7742,7 @@ LAB_04409ca6:
     auStack_72[0] = (undefined2)uVar28;
     custom0.rs1.rs2(uVar9,0);
     if (0xfffd < uVar9) {
-      api_tf_printf(&DAT_0440d2b8,uVar28);
+      api_tf_printf(s_1_W_Scan_id_0x_x__use_default_sp_0440d2b8,uVar28);
     }
     lVar17 = FUN_04409182();
     if (lVar17 == 0) {
@@ -7733,7 +7751,7 @@ LAB_04409ca6:
       }
       goto LAB_0440988a;
     }
-    api_tf_printf(&DAT_0440d2e8);
+    api_tf_printf(s_0_E_spi_nand_scan_fip_header_fai_0440d2e8);
 LAB_0440991c:
     uVar28 = 0xfffffffffffffffe;
   }
@@ -7778,7 +7796,7 @@ void entry_main(undefined8 param_1)
   int boot_src2;
   long i;
   long ret;
-  undefined *str;
+  char *str;
   long lVar3;
   long boot_src3;
   long lVar4;
@@ -7793,10 +7811,11 @@ void entry_main(undefined8 param_1)
   if (i == 3) {
     i = 0;
   }
-  api_tf_printf(&DAT_0440d400,(long)DAT_0440ffe0,s_oe010z_g4bd7a534_0440c140,i,&LAB_04400000);
+  api_tf_printf(s_3_I_V__x__s__d__x__0440d400,(long)DAT_0440ffe0,s_oe010z_g4bd7a534_0440c140,i,
+                &LAB_04400000);
   custom0.rs1.rs2((long)_DAT_030501a0,auStack_130);
   custom0.rs1.rs2((long)_DAT_030501a0,in_t1);
-  api_tf_printf(&DAT_0440d418,(long)_DAT_030501a0,(long)_DAT_030501a0);
+  api_tf_printf(s_2SCS__d__d__0440d418,(long)_DAT_030501a0,(long)_DAT_030501a0);
   custom0.rs1.rs2((long)_DAT_030501a0,auStack_130);
   if ((long)_DAT_030501a0 == 0) {
     FUN_set_DAT_0209005c_04400c82();
@@ -7810,7 +7829,7 @@ void entry_main(undefined8 param_1)
     for (i = 0; ret = p_rom_api_get_number_of_retries(), i < ret; i = (long)((int)i + 1)) {
       boot_src1 = p_rom_api_get_boot_src();
       _DAT_03000084 = 0xb100f801;
-      api_tf_printf(&DAT_0440d428);
+      api_tf_printf(s_2PS__0440d428);
       custom0.rs1.rs2((long)_DAT_030501a0,auStack_130);
       ret = 0x1000;
       if ((long)_DAT_030501a0 == 0) {
@@ -7823,30 +7842,27 @@ void entry_main(undefined8 param_1)
         }
       }
       ret = p_rom_api_load_image(&DAT_3c002000,0,ret,i);
-                    // "0 E:load param1 (%d)\n"
-      str = &DAT_0440d430;
+      str = s_0_E_load_param1___d__0440d430;
       if (ret < 0) goto LAB_0440a208;
       if (_DAT_3c002000 == acVar1) {
         boot_src2 = p_rom_api_image_crc(0x3c002010,0x7f0);
         boot_src3 = (long)boot_src2;
-                    // "0 E:param1_cksum (0x%x/0x%x)\n"
-        str = &DAT_0440d468;
+        str = s_0_E_param1_cksum__0x_x_0x_x__0440d468;
         ret = (long)_DAT_3c00200c;
         if (boot_src3 != _DAT_3c00200c) goto LAB_04409fc6;
         ret = entry_calc_rsa(&DAT_3c002000);
-                    // "0 E:verify root (%d)\n"
-        str = &DAT_0440d488;
+        str = s_0_E_verify_root___d__0440d488;
         if (-1 < ret) {
           ret = entry_verify_rsa_0x600(&DAT_3c002000);
-          str = &DAT_0440d4a0;
+          str = s_0_E_verify_bl_pk___d__0440d4a0;
           if (-1 < ret) {
             ret = entry_aes_decrypt_0x3e0(&DAT_3c002000);
-            str = &DAT_0440d4b8;
+            str = s_0_E_decrypt_bl_ek___d__0440d4b8;
             if (-1 < ret) {
               ret = entry_verify_rsa_0x0e8(&DAT_3c002000);
-              str = &DAT_0440d4d8;
+              str = s_0_E_verify_chip_conf___d__0440d4d8;
               if (-1 < ret) {
-                FUN_set_DAT_0209005c_04400c82(&DAT_0440d4d8);
+                FUN_set_DAT_0209005c_04400c82(s_0_E_verify_chip_conf___d__0440d4d8);
                 FUN_mem_044009bc(0x3c0020e8,(long)_DAT_3c0020bc,0,0xffffffffffffffa0);
                 if (boot_src1 == 0xce00) {
                   api_memcpy(auStack_120,0x3c002010,0x80);
@@ -7858,31 +7874,31 @@ void entry_main(undefined8 param_1)
                 }
                 FUN_mem_044009bc(0x3c0020e8,(long)_DAT_3c0020bc,0xffffffffffffffa0,0);
                 _DAT_03000084 = 0xb100f811;
-                api_tf_printf(&DAT_0440d4f8);
+                api_tf_printf(s_2PE__0440d4f8);
                 lVar4 = (long)_DAT_3c0020c8;
-                api_tf_printf(&DAT_0440d500,lVar4,(long)_DAT_3c0020c4,(long)(int)_DAT_03000004);
-                str = &DAT_0440d520;
+                api_tf_printf(s_3_I_CS_0x_x_0x_x_0x_x__0440d500,lVar4,(long)_DAT_3c0020c4,
+                              (long)(int)_DAT_03000004);
+                str = s_3_I_No_BLCP__0440d520;
                 if ((long)_DAT_3c0020c4 != 0) {
                   lStack_128 = (long)_DAT_3c0020c4;
-                  ret = FUN_get_DAT_3c0020c8_04409cf8(&DAT_0440d520);
+                  ret = FUN_get_DAT_3c0020c8_04409cf8(s_3_I_No_BLCP__0440d520);
                   if (ret != 0) {
-                    str = &DAT_0440d550;
+                    str = s_3_I_BLCP_in_RTC__0440d550;
                     if ((_DAT_03000004 & 0x40) == 0) {
                       _DAT_03000084 = 0xb100f802;
                       _DAT_0e000018 = 0;
-                      api_tf_printf(&DAT_0440d568,lStack_128);
+                      api_tf_printf(s_2CS__0440d568,lStack_128);
                       ret = p_rom_api_load_image(&DAT_3bc00000,0x1000,_DAT_3c0020c4,i);
                       if (ret < 0) goto LAB_04409e9a;
                       boot_src1 = p_rom_api_image_crc(&DAT_3bc00000,(long)_DAT_3c0020c4);
                       ret = (long)_DAT_3c0020c0;
                       boot_src3 = (long)boot_src1;
                       if (boot_src3 != ret) {
-                    // \x01"0 E:blcp_cksum (0x%x/0x%x)\n"
-                        str = &DAT_0440d570;
+                        str = s_0_E_blcp_cksum__0x_x_0x_x__0440d570;
                         goto LAB_04409fc6;
                       }
                       ret = entry_verify_rsa_0x0c4(&DAT_3c002000,&DAT_3bc00000);
-                      str = &DAT_0440d590;
+                      str = s_0_E_verify_blcp___d__0440d590;
                       if (ret < 0) goto LAB_0440a208;
                       custom0.rs1.rs2(lVar4,0);
                       api_memcpy(lVar4,&DAT_3bc00000,_DAT_3c0020c4);
@@ -7898,22 +7914,19 @@ void entry_main(undefined8 param_1)
                           }
                           _DAT_03000084 = 0xb100f803;
                           custom0.rs1.rs2(ret,0);
-                    // \x01"2AS"
-                          api_tf_printf(&DAT_0440d5a8);
+                          api_tf_printf(s_2AS__0440d5a8);
                           boot_src3 = 0;
                           do {
                             lVar3 = p_rom_api_load_image
                                               (&DAT_3bc00000,(long)_DAT_3c0020cc,boot_src3);
                             if (lVar3 < 0) {
-                    // \x01"2AN"
-                              str = &DAT_0440d5b0;
+                              str = s_2AN__0440d5b0;
 LAB_0440a0f8:
                               api_tf_printf(str);
                             }
                             else {
                               if (_DAT_3bc00000 != 0x52505043) {
-                    // \x01"2AM"
-                                str = &DAT_0440d5b8;
+                                str = s_2AM__0440d5b8;
                                 goto LAB_0440a0f8;
                               }
                               boot_src1 = p_rom_api_image_crc(0x3bc00008,(long)((int)ret + -8));
@@ -7922,22 +7935,20 @@ LAB_0440a0f8:
                                 api_flush_dcache_range(0x5200000);
                                 break;
                               }
-                    // \x01"2AC"
-                              api_tf_printf(&DAT_0440d5c0);
+                              api_tf_printf(s_2AC_0x_x_0x_x__0440d5c0);
                             }
                             boot_src3 = (long)((int)boot_src3 + 1);
                           } while (boot_src3 != 4);
-                          api_tf_printf(&DAT_0440d5d0);
+                          api_tf_printf(s_2AE__0440d5d0);
                         }
                       }
                       FUN_set_DAT_020b0004_04400b56(lVar4);
-                      str = &DAT_0440d5d8;
+                      str = s_2CE__0440d5d8;
                     }
                     goto LAB_0440a16c;
                   }
                   boot_src3 = (long)_DAT_3c0020c8;
-                    // \x01"0 E:range of BLCP (0x%x/0x%x)\n"
-                  str = &DAT_0440d530;
+                  str = s_0_E_range_of_BLCP__0x_x_0x_x__0440d530;
                   ret = lStack_128;
 LAB_04409fc6:
                   api_tf_printf(str,boot_src3,ret);
@@ -7946,29 +7957,25 @@ LAB_04409fc6:
 LAB_0440a16c:
                 api_tf_printf(str);
                 lStack_128 = (long)(_DAT_3c0020c4 + 0x1000);
-                api_tf_printf(&DAT_0440d5e0);
+                api_tf_printf(s_2BS__0440d5e0);
                 _DAT_03000084 = 0xb100f804;
                 ret = p_rom_api_load_image(&DAT_3bc00000,lStack_128,_DAT_3c0020d8,i);
-                    // \x01"0 E:load BL2 (%d)\n"
-                str = &DAT_0440d5e8;
+                str = s_0_E_load_BL2___d__0440d5e8;
                 if (-1 < ret) {
                   boot_src1 = p_rom_api_image_crc(&DAT_3bc00000,(long)_DAT_3c0020d8);
                   ret = (long)_DAT_3c0020d4;
                   boot_src3 = (long)boot_src1;
-                    // \x01"0 E:bl2_cksum (0x%x/0x%x)\n"
-                  str = &DAT_0440d600;
+                  str = s_0_E_bl2_cksum__0x_x_0x_x__0440d600;
                   if (boot_src3 != ret) goto LAB_04409fc6;
                   ret = entry_aes_decrypt_0x0d8(&DAT_3c002000,&DAT_3bc00000);
-                    // \x01"0 E:decrypt BL2 (%d)\n"
-                  str = &DAT_0440d620;
+                  str = s_0_E_decrypt_BL2___d__0440d620;
                   if (-1 < ret) {
                     ret = entry_verify_rsa_0x0d8(&DAT_3c002000,&DAT_3bc00000);
                     if (-1 < ret) {
-                      api_tf_printf(&DAT_0440d650,ret);
+                      api_tf_printf(s_2BE__0440d650,ret);
                       break;
                     }
-                    // \x01"0 E:verify BL2 (%d)\n"
-                    str = &DAT_0440d638;
+                    str = s_0_E_verify_BL2___d__0440d638;
                   }
                 }
               }
@@ -7979,8 +7986,7 @@ LAB_0440a208:
         api_tf_printf(str,ret);
       }
       else {
-                    // \x01"0 E:PARAM1 magic (0x%lx)\n"
-        api_tf_printf(&DAT_0440d448);
+        api_tf_printf(s_0_E_PARAM1_magic__0x_lx__0440d448);
       }
 LAB_04409e9a:
     }
@@ -7989,21 +7995,18 @@ LAB_04409e9a:
     boot_src1 = p_rom_api_get_boot_src();
     if ((5 < (ulong)(long)(boot_src1 + -0xcea0)) ||
        ((1L << ((long)(boot_src1 + -0xcea0) & 0x3fU) & 0x29U) == 0)) {
-                    // "0 E:Boot failed (%d).\n"
-      api_tf_printf(&DAT_0440d680,i);
+      api_tf_printf(s_0_E_Boot_failed___d___0440d680,i);
       entry_load_image();
 LAB_0440a264:
       FUN_custom0_04400240();
       FUN_check_DAT_0414001_044003a6();
-                    // \x01"3 I:bl2_entry=%p\n"
-      api_tf_printf(&DAT_0440d698,&LAB_3bc00020);
-      api_tf_printf(&DAT_0440d6b0);
+      api_tf_printf(s_3_I_bl2_entry__p_0440d698,&LAB_3bc00020);
+      api_tf_printf(s_2J__0440d6b0);
       _DAT_03000084 = 0xb100fe00;
       (*(code *)&LAB_3bc00020)(&LAB_3bc00020);
       return;
     }
-                    // "1 W:DL cancelled. Load flash. (%d).\n"
-    api_tf_printf(&DAT_0440d658,i);
+    api_tf_printf(s_1_W_DL_cancelled__Load_flash_____0440d658,i);
     p_rom_api_flash_init();
   } while( true );
 }
@@ -8024,7 +8027,7 @@ void api_usb_init(undefined8 param_1)
   }
   _DAT_030020b8 = 0xf0009;
   _DAT_03002030 = _DAT_03002030 & 0xfff7ffff;
-  api_tf_printf(&DAT_0440cf88,s_cv_usb_clk_init_0440d6f8);
+  api_tf_printf(s_3_I__s_done_0440cf88,s_cv_usb_clk_init_0440d6f8);
   _DAT_03000084 = 0xc0003009;
   return;
 }
@@ -8733,7 +8736,7 @@ undefined8 FUN_0440aab8(undefined8 *param_1)
 
 
 
-long FUN_0440ad88(undefined1 *param_1,undefined8 param_2,long param_3)
+long FUN_mount_sd_0440ad88(undefined1 *param_1,undefined8 param_2,long param_3)
 
 {
   int iVar1;
@@ -8770,7 +8773,7 @@ long FUN_0440ad88(undefined1 *param_1,undefined8 param_2,long param_3)
 
 
 
-long FUN_0440add6(undefined8 *param_1,byte *param_2,byte param_3)
+long FUN_get_fip_0440add6(undefined8 *param_1,byte *param_2,byte param_3)
 
 {
   undefined2 uVar1;
@@ -9250,7 +9253,7 @@ long FUN_0440b598(uint *param_1)
   uint uVar1;
   long lVar2;
   
-  lVar2 = FUN_get_DAT_04140014_044003c8();
+  lVar2 = FUN_get_uart_DAT_04140014_044003c8();
   if (lVar2 != 0) {
     uVar1 = api_uart0_getc();
     lVar2 = 1;
